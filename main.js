@@ -1,3 +1,4 @@
+try {
 window.onload = beginGame;
 
 function loadScript(url)
@@ -453,4 +454,8 @@ function itemInfo(item) {
 		}
 	}
 	return g_ITEMINFO[item]
+}
+}
+catch (err) {
+	alert(err)
 }
